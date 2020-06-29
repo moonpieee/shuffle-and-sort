@@ -1,0 +1,155 @@
+
+:root{
+  --font: sans-serif;
+  --body-bkg-color:#EFEFEF;
+  --btn-color:#ffffff;
+  --btn-bkg-color:#72C3DC;
+  --primary-pad:0.45em;
+  --secondary-pad:0.85em;
+  --primary-mar:0.45em;
+  --secondary-mar:0.85em;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font);
+  height: 100%;
+  margin: 0;
+  background-color: var(--body-bkg-color);
+}
+
+  #container{
+    border-top: solid 5px grey;
+    display: flex;
+  }
+
+  #container .col-boxes{
+    flex: 3;
+  }
+  #container .col-button{
+    flex: 1;
+  }
+
+  .tiles{
+    display: flex;
+    flex-flow: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .box{
+    padding: 5px;
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    width: 33.33%;
+    height: 225px;
+    line-height: 225px;
+  }
+
+
+@media screen and (max-width:480px) {
+  body{
+    background-color: #ffffff;
+  }
+  #container{
+    flex-direction: column;
+    padding: 1em;
+  }
+  /* #container .col-boxes{
+    width: 100%;
+  } */
+
+  .box{
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0px;
+    background-color: #EEEEEE!important;
+    width: 100%;
+    height: 45px;
+    line-height: 35px;
+  }
+}
+
+
+.btn{
+  background-color: var(--btn-bkg-color);
+  color: var(--btn-color);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0px 5px #2B8EAD;
+  border-radius: 8px;
+  min-width: 6em;
+  margin: 0 auto;
+}
+
+.myname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* UTILITY Classes */
+.text-center{
+  text-align: center;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.m-0{
+  margin: 0px;
+}
+.p-0{
+  padding: 0px;
+}
+.p-1{
+  padding: var(--primary-pad);
+}
+.m-1{
+   margin: var(--primary-mar);
+}
+.p-2{
+  padding: var(--secondary-pad);
+}
+.m-2{
+   margin: var(--secondary-mar);
+}
+.mt-1{
+  margin-top: 0.25em;
+}
+.mr-1{
+  margin-right: 0.25em;
+}
+.mb-1,.ml-1{
+  margin-bottom: 0.25em;
+}
+.ml-1{
+  margin-left: 0.25em;
+}
+.pt-1{
+  padding-top: 0.25em;
+}
+.pr-1{
+  padding-right: 0.25em;
+}
+.pb-1,.ml-1{
+  padding-bottom: 0.25em;
+}
+.pl-1{
+  padding-left: 0.25em;
+}
+/* UTILITY Classes */
+
+
+
